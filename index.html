@@ -1,0 +1,49 @@
+<!--
+
+Quentin Mazars-Simon
+@quentinms
+
+ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SoundCloud Video Clip</title>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+
+<!-- Scripts -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://connect.soundcloud.com/sdk.js"></script>
+<script type="text/javascript" src="js/waveform.js"></script>
+<script type='text/javascript' src="js/index.js"></script>
+
+</head>
+
+<body>
+<h1>SoundCloud Video Clip</h1>
+
+<nav></nav>
+
+<div id="#main_panel">
+	<form id="newSongForm" action="javascript:selectSong($('#song_url').val(),$('#song_tag').val());">
+		<label for="song_url">URL:</label>
+		<input  id="song_url" type="url" placeholder="https://soundcloud.com/tea-leigh/color-theory-1"/><br />
+		<label for="song_tag">Tag:</label>
+		<input id="song_tag" type="text"  placeholder="Color Theory"/><br />
+		<button type="button" onclick="javascript:hideForm();" >Cancel</button> <button type="submit">Submit</button>
+	</form>
+	
+	<div id="content">
+		<div id="illustration">
+			<img id="playImage" alt="Play/Pause icon" src="img/play.png"></img>
+		</div>
+	<div id="comment"></div>
+	<div id="time"> </div>
+	<div id="waveform"></div>
+	</div>
+</div>
+
+</body>
+</html>

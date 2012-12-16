@@ -1,0 +1,115 @@
+/*
+Quentin Mazars-Simon
+@quentinms
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-weight: 100; 
+}
+
+#main_panel{
+
+}
+
+
+nav {
+	width: 250px;
+	float: left;
+	display: inline;
+	margin: 10px 10px 10px 100px;
+	padding: 0;
+	
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li {
+	border-bottom: 1px solid black;	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 30px;
+	
+}
+
+h1{
+	font-size: 45px;
+	font-weight: 100;
+	text-align: center;
+	margin: 20px;
+}
+
+#newSongForm{
+	float: left;
+	font-size: 20px;
+	margin: 5%;
+	display: none;
+}
+
+#newSongForm input{
+	font-size: 20px;
+	width: 400px;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	
+}
+#newSongForm button{
+
+	font-size: 20px;
+	width: 100px;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	margin: 20px auto 20px auto;
+	
+	position: relative;
+	left: 25%;
+}
+
+#content{
+
+	
+}
+
+#illustration{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background: url('http://lorempixel.com/500/500/abstract/');
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  /*
+  If do not want to always be squared
+  background-size: contain;
+  */
+}
+
+#playImage{
+	margin: 200px;
+}
+
+#time{
+  width: 500px;
+  height: 20px;
+  margin: auto; 
+  text-align: right;
+}
+
+#waveform {
+  width: 500px;
+  height: 75px;
+  margin: auto; 
+}
+
