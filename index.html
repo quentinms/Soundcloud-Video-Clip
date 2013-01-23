@@ -1,10 +1,3 @@
-<!--
-
-Quentin Mazars-Simon
-@quentinms
-
- -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
@@ -17,6 +10,7 @@ Quentin Mazars-Simon
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="https://connect.soundcloud.com/sdk.js"></script>
 <script type="text/javascript" src="js/waveform.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
 <script type='text/javascript' src="js/index.js"></script>
 
 </head>
@@ -25,25 +19,28 @@ Quentin Mazars-Simon
 <h1>SoundCloud Video Clip</h1>
 
 <nav></nav>
-
-<div id="#main_panel">
+<div id="main_panel">
 	<form id="newSongForm" action="javascript:selectSong($('#song_url').val(),$('#song_tag').val());">
 		<label for="song_url">URL:</label>
 		<input  id="song_url" type="url" placeholder="https://soundcloud.com/tea-leigh/color-theory-1"/><br />
 		<label for="song_tag">Tag:</label>
 		<input id="song_tag" type="text"  placeholder="Color Theory"/><br />
-		<button type="button" onclick="javascript:hideForm();" >Cancel</button> <button type="submit">Submit</button>
+		<button id="cancel_button" type="button" onclick="javascript:hideForm();" >Cancel</button> <button id="submit_button" type="submit">Submit</button>
 	</form>
 	
 	<div id="content">
-		<div id="illustration">
-			<img id="playImage" alt="Play/Pause icon" src="img/play.png"></img>
+		<div id="illustration"></div>
+		<div id="time"> </div>
+		<div id="player">
+			<img src="img/Play.png" id="playButton" onclick="javascript:togglePause();" />
+			<div id="cursor"></div>
+			<div id="waveform"></div>
 		</div>
-	<div id="comment"></div>
-	<div id="time"> </div>
-	<div id="waveform"></div>
 	</div>
 </div>
-
+<div id="comments_div">
+	<img src="img/Comment.png" id="commentButton" onclick="javascript:toggleComments();" />
+	<div id="comment"></div>
+</div>
 </body>
 </html>

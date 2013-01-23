@@ -10,8 +10,7 @@ The illustration are fetched from [this Tumblr](http://soundcloudvideoclip.tumbl
 [http://www.quentin.ms/SoundcloudVideo/index.html](http://www.quentin.ms/SoundcloudVideo/index.html)
 
 ### Used libraries
-* [jQuery](jquery.com)
+* [jQuery](http://jquery.com)
 * [Soundcloud API](http://developers.soundcloud.com/docs/api/sdks#javascript)
-* [waveform.js](waveformjs.org)
-
-Made by Quentin Mazars-Simon and Belinda 
+* [waveform.js](http://waveformjs.org)
+* [raphael.js](http://raphaeljs.com)
